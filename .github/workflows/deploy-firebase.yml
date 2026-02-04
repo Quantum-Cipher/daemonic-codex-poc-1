@@ -24,7 +24,7 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install Firebase CLI (pinned)
+      - name: Install Firebase CLI (pinned version)
         run: npm install -g firebase-tools@13
 
       - name: Deploy Firestore Rules & Indexes

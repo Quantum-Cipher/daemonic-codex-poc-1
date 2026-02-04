@@ -1,11 +1,9 @@
 steps:
-  - name: 'gcr.io/cloud-builders/docker'
+- name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/daemonic-codex-poc-1:latest', '.']
-
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/daemonic-codex-poc-1:latest']
-
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+ - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
       [

@@ -1,0 +1,21 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "daemon_events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "agentID", "order": "ASCENDING" },
+        { "fieldPath": "serverTimestamp", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "codex_entries",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "category", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

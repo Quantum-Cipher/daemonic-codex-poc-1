@@ -1,0 +1,29 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global default-deny — nothing allowed unless explicitly matched below
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Daemon events — only callable functions / service accounts with isDaemon claim
+    match /daemon_events/{docId} {
+      allow create: if request.auth != null && request.auth.token.isDaemon == true;
+      allow read, update, delete: if false;
+    }
+
+    // Codex entries — same pattern
+    match /codex_entries/{docId} {
+      allow create: if request.auth != null && request.auth.token.isDaemon == true;
+      allow read, update, delete: if false;
+    }
+
+    // Audit logs — stricter, only isAdmin claim (for bootstrap / admin functions)
+    match /audit_logs/{docId} {
+      allow create: if request.auth != null && request.auth.token.isAdmin == true;
+      allow read, update, delete: if false;
+    }
+  }
+}

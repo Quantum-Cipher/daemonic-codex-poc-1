@@ -1,1 +1,8 @@
-{"name":"daemonic-codex-poc-1","version":"1.0.0","description":"Daemonic Codex POC: Firebase Functions + Firestore backend for daemon signals and logs.","main":"index.js","type":"module","engines":{"node":"20"},"scripts":{"start":"node index.js","deploy":"firebase deploy --only functions,firestore:rules,firestore:indexes --project daemonic-codex-poc-1","lint":"eslint .","test":"echo \"No tests defined yet\" && exit 0"},"keywords":["firebase","functions","firestore","daemon","poc","daemonic-codex"],"author":"Cipher","license":"ISC","dependencies":{"firebase-admin":"^12.7.0","firebase-functions":"^7.0.5"},"devDependencies":{"eslint":"^8.50.0"}}
+{"name":"daemonic-codex-poc-1","version":"1.0.0","description":"Daemonic Codex POC: Firebase Functions + Firestore backend for daemon signals and logs.","main":"index.js","type":"module","engines":{"node":"20"},"scripts":{"start":"node index.js","deploy":"firebase deploy --only functions,firestore:rules,firestore:indexes --project daemonic-codex-poc-1","lint":"eslint .","test":"echo \"No tests defined yet\" && exit 0"},"keywords":["firebase","functions","firestore","daemon","poc","daemonic-codex"],"author":"Cipher","license":"ISC","dependencies":{"firebase-admin":"^12.7.0","firebase-functions":"^7.0.5"},"devDependencies":{"eslint":"^8.50.0"}},
+"scripts": {
+  "build": "echo 'No build step, static site only.'"
+}
+,
+"scripts": {
+  "build": "echo 'No build step, static site only.'"
+}

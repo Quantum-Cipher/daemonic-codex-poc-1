@@ -1,0 +1,28 @@
+PatchID: PATCH-2026-02-06-HTML-INJECTION-001
+Title: Inject Daemon Network Status block + app.js uplink
+Author: eternum
+Date: 2026-02-06
+Repo: daemonic-codex-poc-1
+
+Summary:
+  Introduces the Daemon Network Status UI block into public/index.html and
+  injects the app.js script tag before </body>. This establishes the first
+  visible heartbeat surface for the daemon uplink.
+
+Changes:
+  - Added "## Daemon Network Status" section
+  - Inserted <div id="status"> with initialization message
+  - Injected <script src="app.js"></script> before </body>
+  - Ensured macOS-safe multiline patching via Perl
+
+Artifacts Modified:
+  - public/index.html
+
+Verification:
+  grep -R "Daemon Network Status" -n public/index.html
+  grep -R "id=\"status\"" -n public/index.html
+  grep -R "app.js" -n public/index.html
+
+Notes:
+  This patch is idempotent and safe to reapply. It establishes the first
+  visible uplink surface for the daemon codex.

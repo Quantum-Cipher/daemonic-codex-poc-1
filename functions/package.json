@@ -1,28 +1,16 @@
 {
   "name": "functions",
-  "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "serve": "npm run build && firebase emulators:start --only functions",
-    "shell": "npm run build && firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
+  "description": "Daemonic Codex Proxy Layer",
   "engines": {
     "node": "20"
   },
   "main": "index.js",
   "dependencies": {
     "firebase-admin": "^12.7.0",
-    "firebase-functions": "^5.1.1"
+    "firebase-functions": "^5.1.1",
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.4.0"
   },
-  "pnpm": {
-    "overrides": {
-      "fast-xml-parser": "^5.3.3"
-    },
-    "ignoredBuiltDependencies": [
-      "protobufjs"
-    ]
-  }
+  "private": true
 }

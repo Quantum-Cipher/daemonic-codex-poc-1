@@ -1,16 +1,179 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Daemon Codex</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher | The Occultist Coder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-## Daemon Network Status
- <div id="status" style="border:1px solid #333; padding:15px; margin:20px 0; font-family:monospace; color:#0f0;">Initializing uplink...</div>
+    <canvas id="mycelium-canvas"></canvas>
 
- ## Battle Data (Experience)
+    <nav class="navbar glass-panel">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Occultist Coder Sigil" class="sigil-logo">
+            <span class="brand-name">CIPHER_0x</span>
+        </div>
+        <div class="nav-links">
+            <a href="#experience">Data</a>
+            <a href="#grimoire">Projects</a>
+            <a href="#skills">Abilities</a>
+            <a href="#oracle">Oracle</a>
+        </div>
+    </nav>
 
-<script src="app.js"></script>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch">NEUROMYCELIAL ARCHITECT</h1>
+            <p class="subtitle">Weaving Fibonacci logic into decentralized eternities.</p>
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <span class="stat-num">33</span>
+                    <span class="stat-label">Smart Contracts</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">Φ</span>
+                    <span class="stat-label">Golden Ratio UI</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">1.618</span>
+                    <span class="stat-label">System Efficiency</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="experience" class="container">
+        <h2 class="section-title">Battle Data (Experience)</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item glass-panel">
+                <div class="timeline-header">
+                    <h3>Blockchain & Smart Contracts Architect</h3>
+                    <span class="date">2023 - Present</span>
+                </div>
+                <p>Developed multi-chain token systems including Shamir Vault and WORKGROUP Tokens.</p>
+                <ul class="timeline-details">
+                    <li><strong>Tools:</strong> Solidity, Multi-chain protocols, Git</li>
+                    <li><strong>Impact:</strong> Designed secure token infrastructure and deployed production-ready smart contracts reducing gas fees by 20%.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item glass-panel">
+                <div class="timeline-header">
+                    <h3>AI & Automation Engineer</h3>
+                    <span class="date">2021 - 2023</span>
+                </div>
+                <p>Built Grok AI models for predictive telemetry and intelligent routing in Ghostnode & SigilSocket.</p>
+                <ul class="timeline-details">
+                    <li><strong>Tools:</strong> Node.js, Python, TensorFlow, Cloud Orchestration</li>
+                    <li><strong>Impact:</strong> Optimized autonomous system decisions across blockchain nodes, improving uptime to 99.9%.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="grimoire" class="container">
+        <h2 class="section-title">The Digital Grimoire</h2>
+        <div class="project-grid">
+            <div class="project-card glass-panel" data-ai-context="DeFi Liquidity Engine">
+                <div class="card-header">
+                    <h3>Eternum Liquidity Nexus</h3>
+                    <span class="rune">Ξ</span>
+                </div>
+                <p>Multi-chain hub orchestrating liquidity across Ethereum, Polygon, and Solana.</p>
+                <div class="tech-stack">
+                    <span>Solidity</span><span>React</span><span>The Graph</span>
+                </div>
+            </div>
+
+            <div class="project-card glass-panel" data-ai-context="Cryptographic Vault">
+                <div class="card-header">
+                    <h3>Shamir's Obsidian Vault</h3>
+                    <span class="rune">Ω</span>
+                </div>
+                <p>Immutable cryptographic key infrastructure with distributed intelligence using Shamir's Secret Sharing.</p>
+                <div class="tech-stack">
+                    <span>Rust</span><span>WASM</span><span>IPFS</span>
+                </div>
+            </div>
+
+            <div class="project-card glass-panel" data-ai-context="Telemetry System">
+                <div class="card-header">
+                    <h3>Ghostnode Telemetry</h3>
+                    <span class="rune">👁</span>
+                </div>
+                <p>Real-time blockchain surveillance tool. Monitors mempool anomalies and front-running attacks.</p>
+                <div class="tech-stack">
+                    <span>Python</span><span>TensorFlow</span><span>WebSocket</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <div class="two-column-grid">
+            <div class="column">
+                <h2 class="section-title">Arcane Abilities</h2>
+                <div class="skills-grid">
+                    <div class="skill-card glass-panel">Blockchain Architecture</div>
+                    <div class="skill-card glass-panel">Smart Contracts (Solidity)</div>
+                    <div class="skill-card glass-panel">AI & Predictive Models</div>
+                    <div class="skill-card glass-panel">Cryptography</div>
+                    <div class="skill-card glass-panel">DevOps & CI/CD</div>
+                    <div class="skill-card glass-panel">React & Web3.js</div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <h2 class="section-title">Credentials</h2>
+                <div class="cert-list">
+                    <div class="cert-item glass-panel">
+                        <span class="rune-small">☁️</span> Google Cloud Certified – Professional Architect
+                    </div>
+                    <div class="cert-item glass-panel">
+                        <span class="rune-small">💠</span> Certified Solidity Developer – Ethereum Foundation
+                    </div>
+                    <div class="cert-item glass-panel">
+                        <span class="rune-small">🧠</span> Certified AI Practitioner
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="oracle" class="container">
+        <h2 class="section-title">Commune with the Architect</h2>
+        <div class="terminal-window glass-panel">
+            <div class="terminal-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="terminal-title">ORACLE_v1.0.4.sh</span>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+                <div class="line system-msg">Initializing connection to the Void...</div>
+                <div class="line system-msg">Type 'help' to view available incantations.</div>
+            </div>
+            <div class="input-line">
+                <span class="prompt">guest@cipher:~$</span>
+                <input type="text" id="terminal-input" autocomplete="off">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="container glass-panel footer-panel">
+        <h2>Establish Link</h2>
+        <div class="social-links">
+            <a href="#" class="btn-glow">GitHub</a>
+            <a href="#" class="btn-glow">LinkedIn</a>
+            <a href="mailto:youremail@example.com" class="btn-glow">Email</a>
+        </div>
+        <p class="copyright">© 2026 Cipher. All Rites Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
